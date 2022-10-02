@@ -19,5 +19,6 @@ jobs:
       - uses: actions/upload-artifact@v2
         if: always()
         with:
+          run: yarn report
           name: cypress-reports
           path: cypress/reports
