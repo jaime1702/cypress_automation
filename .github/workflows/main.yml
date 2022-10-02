@@ -16,11 +16,9 @@ jobs:
           name: cypress-screenshots
           path: cypress/screenshots
       # Test run video was always captured, so this action uses "always()" condition
-      steps:
-      runs-on: ubuntu-20.04
       - uses: actions/upload-artifact@v2
         if: always()
         with:
-          run: yarn report
+         - run: yarn report
           name: cypress-reports
           path: cypress/reports
