@@ -5,7 +5,7 @@ export default {
     return {
       email: fakerBr.internet.email(),
       phone: '45985745987',
-      userName: 'JaimeAccenture',
+      userName: 'JaimeTeste',
       password: 'J@imeteste123',
       comments: 'Teste realizado por Jaime',
     };
